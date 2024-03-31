@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <h1>Enter any number print Table!!</h1> -->
+    <!-- <p>JavaScript program</p> -->
+    <script>
+        var num = parseInt(prompt("Enter the number for Print Tables One!"))
+        // document.querySelector('h1').innerHTML = "Multiplication Table for " + num;
+        function table(num) {
+            var result = " ";
+            var i = 1;
+            while (i <= 10) {
+                var r = num * i;
+                result += num + " * " + i + " = " + r + "<br>";
+                i++;
+            }
+            return result;
+        }
+        document.body.innerHTML = table(num);
+
+
+
+
+
+    </script>
+</body>
+
+</html>

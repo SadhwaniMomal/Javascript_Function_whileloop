@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If Program</title>
+</head>
+
+<body>
+    <script>
+        const user = prompt("Today Resturnat Open OR Not??");
+        function Resturnats(user) {
+            if (user == "open") {
+                document.body.innerText = "Yes today resturnat are open!";
+                const meun = prompt("Menu Book");
+                if (meun == "Briyani") {
+                    document.body.innerText = "chicken briyani 200pkr and chana 150pkr"
+                } else if (meun == "pani") {
+                    document.body.innerText = "Prices 100pkr"
+                } else {
+                    document.body.innerText = "thankyou for comming"
+                }
+            }
+            else {
+                document.body.innerText = "Sorry, the restaurant is closed today.And our resturnat open and cloased timming 12:00pm to 12:00am";
+                
+            }
+        } Resturnats(user)
+
+    </script>
+</body>
+
+</html>
